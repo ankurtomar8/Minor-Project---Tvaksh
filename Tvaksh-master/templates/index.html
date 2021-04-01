@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Tvaksh</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')  }}" media="screen"/>
+</head>
+<body>
+
+   <header>
+    <nav>
+      </div class="row clearfix">
+            <img src="static/images/logo.jpg" class="logo">
+            <ul class="main-nav animated shake" id="check-class">
+                <li><a href="/about">About</a></li>
+                <li><a href="/skinhealth">Skin-health</a></li>
+                <li><a href="/contactus">Contact-Us</a></li>
+                <li><a href="/register">Sign-In</a></li>
+
+            </ul>
+            <a href="#" class="mobile-icon" onclick="slideshow()"> <i class="fa fa-bars"></i> </a>
+      </div>
+    </nav>       
+    <div class="main-content-header">
+        <h1>WELCOME TO <span class="colorchange">Tvaksh</span>.
+        </h1>
+        <h2>Its never too late to care for your skin.</h2>
+        <a href="/home" class="btn btn-full">Get started</a>
+        <a href="/register" class="btn btn-nxt">Sign-up </a>
+    </div>
+    </header>
+
+    <script type="text/javascript">
+        
+           function slideshow(){
+                 var x= document.getElementById('check-class');
+                 if(x.style.display==="none"){
+                     x.style.display="block";
+        }else{x.style.display="none";}
+           }
+    </script>
+        
+</body>
+</html>     

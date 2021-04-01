@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing : border-box;
+}
+
+
+body{
+    font-size: 20px;
+    overflow-y: auto;
+    color:whitesmoke;
+    background-attachment: scroll;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0.3,0.7),rgba(0,0,0.3,0.7)), url('../images/img5.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 180vh;
+}
+
+
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear:both;
+}
+
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    padding:0px;
+    border-color: seashell;
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+.main-nav li a{
+    padding: 5px 0;
+    color:tan;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:60;
+    overflow-y: scroll;
+}
+
+.main-nav li a:hover{
+    border-bottom: 1px solid grey;   
+    padding: 1px;
+}
+
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+
+.btn-full{
+background-color: transparent;
+color:turquoise;
+margin-right: 20px;
+border: 1px solid turquoise;
+
+}   
+
+.btn-full:hover{
+background-color:indianred;
+}
+
+.btn-nxt{
+background-color: transparent;
+color: indianred;
+margin-right: 20px;
+border: 1px solid; 
+} 
+
+.btn-nxt:hover{
+background-color:turquoise;
+
+}
+
+.colorchange{
+animation: colorchangeTvaksh 1s infinite;
+animation: colorchangeallabout 2s infinite;
+}
+
+@keyframes colorchangeTvaksh{
+10%{color: paleturquoise;}
+25%{color: plum;}
+30%{color: palevioletred;}
+25%{color: azure;}
+}
+@keyframes colorchangeallabout{
+10%{color: peachpuff;}
+20%{color:powderblue;}
+20%{color: pink;}    
+}
+
+
+.mobile-icon{
+display: none;
+}
+
+/*///////// Responsive queries////////*/
+
+@media only screen and (max-width: 1180px){
+.main-content-header{
+    width:100%;
+    padding:0 2%;
+
+}
+}
+
+@media only screen and (max-width: 1150px){
+    .main-content-info{
+        width:100%;
+        padding:0 2%;}
+
+}
+@media only screen and (max-width: 998px){
+    h1{
+    font-size: 150%;}
+}
+
+@media only screen and (max-width: 768px){
+     h1{font-size: 100%;}
+
+     .main-nav{display: none;}
+
+     .mobile-icon{display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{float:left;}
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+.main-content-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+
+h1{
+    color:white;
+    font-size: 180%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    float: top;
+
+}
+
+p1{
+    color:whitesmoke;
+    font-size:100%;
+    word-spacing: 2px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: slategrey;
+    font-size: 180%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    float: right;
+ 
+}
+
+h3{
+    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40;
+}
+
+p2{
+    color:whitesmoke;
+    font-size:80%;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+    float: center;
+}
+
+h4{
+    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40;  
+}
+
+p3{
+    color:whitesmoke;
+    font-size:80%;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    margin-bottom: 25px;
+    float: center;
+}
+
+.skin-disease-info{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h5{
+    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;  
+}
+
+
+p4{
+    font-size: 80%;
+    margin-bottom:-50px;
+    float: center;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+}
+.disease-nav{
+    float: center;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    padding:0px;
+    overflow-y: hidden;
+    border-color: seashell;
+}
+
+.disease-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    top: 50%;
+    text-align: left;
+}

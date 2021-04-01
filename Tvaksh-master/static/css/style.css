@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing : border-box;
+}
+
+
+body{
+    font-size: 20px;
+    overflow-y: hidden;
+    color: white;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0.3,0.7),rgba(0,0,0.3,0.7)), url('../images/img3.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    height: 100vh;
+}
+
+
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear:both;
+}
+
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    border-style: solid;
+    border-radius: 10px;
+    padding:0px;
+    border-color: seashell;
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+.main-nav li a{
+    padding: 5px 0;
+    color:tan;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:60;
+    overflow-y: scroll;
+}
+
+.main-nav li a:hover{
+    border-bottom: 1px solid grey;   
+    padding: 1px;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+
+.btn-full{
+background-color: transparent;
+color:turquoise;
+margin-right: 20px;
+border: 1px solid turquoise;
+
+}   
+
+.btn-full:hover{
+background-color:indianred;
+}
+
+.btn-nxt{
+background-color: transparent;
+color: indianred;
+margin-right: 20px;
+border: 1px solid; 
+} 
+
+.btn-nxt:hover{
+background-color:turquoise;
+
+}
+
+.colorchange{
+animation: colorchangeARTIPLEX 1s infinite;
+}
+
+@keyframes colorchangeARTIPLEX{
+0%{color: palegoldenrod;}
+25%{color: plum;}
+50%{color:khaki;}
+100%{color:peru;}
+}
+
+.mobile-icon{
+display: none;
+}
+
+/*///////// Responsive queries////////*/
+
+@media only screen and (max-width: 1180px){
+.main-content-header{
+    width:100%;
+    padding:0 2%;
+
+}
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 150%;}
+}
+
+@media only screen and (max-width: 768px){
+     h1{font-size: 100%;}
+
+     .main-nav{display: none;}
+
+     .mobile-icon{display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav{float:left;}
+    .main-nav li{
+        
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+.main-content-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+
+h1{
+    color: whitesmoke;
+    font-size: 270%;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+
+h2{
+    color: skyblue;
+    font-size: 150%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    top: 50%;
+    text-align: left;
+}
